@@ -1,15 +1,16 @@
 !/usr/bin/env bash
-# Bash script that ddisplays numbers from 1 to 20 & does stuff.
+# Bash script that ddisplays numbers from 1 to 20 & does 
+# cool stuff.
 
 count_=1
 
 while [ $count_ -le 20 ]
 do
+  echo "$count_"
   case $count_ in
-    "4") echo "$count_ bad luck from China";;
-    "9") echo "$count_ bad luck from Japan";;
-    "17") echo "$count_ bad luck from Italy";;
-    *) echo $count_;;
+    "4") echo "bad luck from China";;
+    "9") echo "bad luck from Japan";;
+    "17") echo "bad luck from Italy";;
   esac
   ((count_++))
 done

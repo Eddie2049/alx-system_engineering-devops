@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# Bash script that Loops from 1 to 10 and displays stuff.
+
+count_=0
+
+while [ $count_ -lt 10 ]
+do
+  if [ $count_ -eq 3 ]
+  then
+    echo "bad luck"
+  elif [ $count_ -eq 7 ]
+  then
+    echo "good luck"
+  else
+    echo "Best School"
+  fi
+  (( count_++ ))
+done
